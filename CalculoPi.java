@@ -62,14 +62,12 @@ public class CalculoPi{
 
 		if (Math.sqrt(Math.pow(coordenadaX , 2) + Math.pow(coordenadaY, 2)) <= 1){
 			dentroCirculo++;
-			dentroCuadrado++;
-		} else {
-			dentroCuadrado++;
-		}
-
-	}
-		Pi = 4.0 * (double)(dentroCirculo/dentroCuadrado);
-		System.out.println("El valor calculado de Pi es: " + Pi);
+		} 
+		dentroCuadrado++;
 	}
 
+	Pi = 4.0 * (double)(dentroCirculo/dentroCuadrado);
+	System.out.println("El valor calculado de Pi es: " + Pi);
+	}
 }
+
