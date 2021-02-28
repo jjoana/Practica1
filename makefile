@@ -3,6 +3,6 @@ limpiar:
 compilar:limpiar
 	mkdir bin
 	find src -name *.java | xargs javac -cp "lib/*:bin" -d bin 
-	javadoc	-d calculoPiDocs ./src/CalculoPi.java
+	javadoc	-d calculoPiDocs ./src/aplicacion/Principal.java ./src/mates/Matematicas.java
 ejecutar:
-	java -cp bin CalculoPi
+	java -cp bin aplicacion.Principal 10000000
