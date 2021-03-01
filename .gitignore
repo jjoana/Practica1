@@ -1,7 +1,10 @@
-# Compiled class file
-*.class
+# Compiled class files
+/bin/*.class
 
-# Log file
+# javadoc files
+/calculoPiDocs/
+
+# Log files
 *.log
 
 # BlueJ files
