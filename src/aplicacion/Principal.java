@@ -16,6 +16,11 @@ Copyright [2021] [Jesús Joana Azuara]
 package aplicacion;
 import mates.Matematicas;
 
+/**
+	* Clase que implementa el método principal,
+	* el argumento args[0] indica el número de iteraciones que van a realizarse para calcular el número Pi
+	* @version 1.0
+*/
 public class Principal{ 
 
  public static void main(String[] args){

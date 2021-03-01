@@ -14,25 +14,33 @@ Copyright [2021] [Jesús Joana Azuara]
 */
 
 package mates;
-public class Matematicas{
-/**
-	* Genera una aproximacion al numero Pi mediante el metodo de Montecarlo
-	* El parametro 'pasos' inidica el número de puntos generado
-*/
 
+/**
+	* Una clase que permite calcular el número Pi mediante el metodo de Montecarlo (es una aproximación más o menos
+	* precisa, en función del número de iteraciones que realicemos)
+*/
+public class Matematicas{
+
+
+/**
+	* Método estático que implementa el método de Montecarlo, se le pasa por parámetro el número de iteraciones
+	* que vamos a realizar a la hora de calcular el número Pi
+	* @param pasos Nº de iteraciones.
+	* @return Pi.
+*/
 	public static double generarNumeroPi(long pasos){
 
-		//Esta variable sirve para ir contando el numero de puntos que caen aleatoriamente dentro del circulo
+		//Variable utilizada para contar el número de puntos que caen dentro del círculo
 		double dentroCirculo=0.0;
-		//Esta variable sirve para ir contando los puntos que caen tanto en el circulo como en el cuadrado
+		//Variable para ir contando los puntos que caen en el cuadrado (fuera del círculo)
 		double dentroCuadrado=0.0;
-		//Es la constante que esatblece el area de un cuadrado de lado 2
+		//Es la constante que establece el area de un cuadrado de lado 2
 		final int areaCuadrado = 4;
 		//Esta variable sirve para establecer la coordenada x del punto aleatorio 
 		double coordenadaX;
-		//Esta varibale sirve para establecer la coordenada y del punto aleatorio
+		//Esta variable sirve para establecer la coordenada y del punto aleatorio
 		double coordenadaY;
-		// Esta varible sirve para almacenar el valor del número Pi
+		//Esta variable sirve para almacenar el valor del número Pi
 		double Pi;
 
 		// Bucle principal del modelo de MonteCarlo
